@@ -14,8 +14,9 @@ import os
 from pathlib import Path
 
 # SN Project URL
-MYURL = "https://friedfripple-8000.\
-theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai"
+MYURL = "https://friedfripple-8000."
+MYURL += "theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai"
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -97,8 +98,8 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-        'django.contrib.auth.password_validation.\
-        UserAttributeSimilarityValidator',
+        'django.contrib.auth.password_validation.'+
+        'UserAttributeSimilarityValidator',
     },
     {
         'NAME':
